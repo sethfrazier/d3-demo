@@ -50,26 +50,26 @@ window.onload = function(){
     
     var cityPop = [
         { 
-            city: 'Madison',
-            population: 233209
+            city: 'Klamath Falls',
+            population: 25000
         },
         {
-            city: 'Milwaukee',
-            population: 594833
+            city: 'Spokane',
+            population: 225000
         },
         {
-            city: 'Green Bay',
-            population: 104057
+            city: 'Medford',
+            population: 110000
         },
         {
-            city: 'Superior',
-            population: 27244
+            city: 'Bend',
+            population: 150000
         }
     ];
     
      //above Example 2.8 line 20
     var x = d3.scaleLinear()  //create the scale
-        .range([90, 750]) //output min and max
+        .range([90, 700]) //output min and max
         .domain([0, 3]); //input min and max
     console.log(x);
     
@@ -87,7 +87,7 @@ window.onload = function(){
     //scale for circles center y coordinate
     var y = d3.scaleLinear()
         .range([450, 50]) //was 440, 95
-        .domain([0, 700000]); //was minPop, maxPop
+        .domain([0, 300000]); //was minPop, maxPop
     
      //color scale generator 
     var color = d3.scaleLinear()
